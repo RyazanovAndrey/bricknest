@@ -37,7 +37,7 @@ const Header = () => {
           <button onClick={() => setIsOpen(true)} className='cursor-pointer'>
             <User />
           </button>
-          <button className='bg-main py-2 px-4 rounded-md cursor-pointer'>Add listing</button>
+          <button className='bg-main py-2 px-4 rounded-sm cursor-pointer'>Add listing</button>
         </div>
       </div>
       {isOpen && <Modal toggleModal={toggleModal} />}

@@ -6,7 +6,7 @@ const Modal = ({ toggleModal }) => {
     const [showPass, setShowPass] = useState(false)
 
     return (
-        <div className='fixed inset-0 bg-black/80 grid place-items-center text-black'>
+        <div className='fixed inset-0 bg-black/80 grid place-items-center text-black z-50'>
             <div className="relative max-w-[800px] flex bg-white">
                 <img src='image/couple-login-modal.jpeg' width={400} alt="" />
                 <div className="flex items-center p-8">
