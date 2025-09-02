@@ -127,6 +127,14 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Section Properties */}
+      <section className='bg-section-violet'>
+        <div className="container mx-auto px-3">
+            <div className="">
+              
+            </div>
+        </div>
+      </section>
     </>
   )
 }
