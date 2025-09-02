@@ -8,3 +8,17 @@
   --color-section-violet: ;
   --color-section-grey: ;
 }
+
+/* Dots main swiper */
+.swiper-all {
+  height: 450px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-main);
+}
+
+/* Dots single swiper */
+.swiper-single-dots .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 55%;
+}

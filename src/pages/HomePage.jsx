@@ -1,7 +1,15 @@
 import { ArrowRight, MoveRight, Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import Title from '../components/Title'
-import servicesList from '@/db.json'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import sportList from '../db.json'
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import RoomCard from '../components/RoomCard';
 
 const HomePage = () => {
 
@@ -97,7 +105,25 @@ const HomePage = () => {
               <p className='text-[#B2B3B2] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum.</p>
               <a href="#" className='flex items-center gap-x-2 text-[#B2B3B2] hover:text-main'>Learn more... <ArrowRight className='' size={16} /></a>
             </div>
-
+          </div>
+        </div>
+      </section>
+      {/* Section Spotlight */}
+      <section className='py-20'>
+        <div className="container mx-auto px-3">
+          <Title title={'Spotlight Properties'} desc={'Add the listings you want to showcase as featured'} />
+          <div className="mt-5">
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={20}
+              slidesPerView={3}
+              pagination={{ clickable: true }}
+              className='swiper-all'
+            >
+              {sportList.sport.map(item => (
+                <SwiperSlide className=''><RoomCard {...item} /></SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>
