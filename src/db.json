@@ -1,0 +1,28 @@
+{
+    "services" : [
+        {
+            "title" : "Servises 1",
+            "desc" : "Desc 1",
+            "image" : "image/service-icon1.svg",
+            "color" : "D6E3ED"
+        },
+        {
+            "title" : "Servises 2",
+            "desc" : "Desc 2",
+            "image" : "image/service-icon2.svg",
+            "color" : "D8E4EB"
+        },
+        {
+            "title" : "Servises 3",
+            "desc" : "Desc 3",
+            "image" : "image/service-icon3.svg",
+            "color" : "E1D6EE"
+        },
+        {
+            "title" : "Servises 4",
+            "desc" : "Desc 4",
+            "image" : "image/service-icon4.svg",
+            "color" : ""
+        }
+    ]
+}

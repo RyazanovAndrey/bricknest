@@ -1,5 +1,7 @@
-import { Search } from 'lucide-react'
+import { ArrowRight, MoveRight, Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
+import Title from '../components/Title'
+import servicesList from '@/db.json'
 
 const HomePage = () => {
 
@@ -56,8 +58,47 @@ const HomePage = () => {
       </section>
       {/* Section Services */}
       <section>
-        <div className="container mx-auto px-3">
-          123
+        <div className="container mx-auto px-3 py-20">
+          <Title title={'Our Services'} desc={'Bricknest offers you the best real estate website'} />
+          <div className="grid grid-cols-4 gap-x-5 mt-5">
+
+            <div className="relative top-0 border border-line rounded-sm p-5 flex flex-col items-center gap-3 cursor-pointer transition-all hover:-top-1">
+              <div className="size-20 bg-[#D6E3ED] rounded-sm flex items-center justify-center">
+                <img src="image/service-icon1.svg" width={50} alt="" />
+              </div>
+              <div className="text-xl font-bold">Sell your home</div>
+              <p className='text-[#B2B3B2] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum.</p>
+              <a href="#" className='flex items-center gap-x-2 text-[#B2B3B2] hover:text-main'>Learn more... <ArrowRight className='' size={16} /></a>
+            </div>
+
+            <div className="relative top-0 border border-line rounded-sm p-5 flex flex-col items-center gap-3 cursor-pointer transition-all hover:-top-1">
+              <div className="size-20 bg-[#D6E3ED] rounded-sm flex items-center justify-center">
+                <img src="image/service-icon2.svg" width={50} alt="" />
+              </div>
+              <div className="text-xl font-bold">Home loans</div>
+              <p className='text-[#D7E4F0] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum.</p>
+              <a href="#" className='flex items-center gap-x-2 text-[#B2B3B2] hover:text-main'>Learn more... <ArrowRight className='' size={16} /></a>
+            </div>
+
+            <div className="relative top-0 border border-line rounded-sm p-5 flex flex-col items-center gap-3 cursor-pointer transition-all hover:-top-1">
+              <div className="size-20 bg-[#E3D8F0] rounded-sm flex items-center justify-center">
+                <img src="image/service-icon3.svg" width={50} alt="" />
+              </div>
+              <div className="text-xl font-bold">Home inspection</div>
+              <p className='text-[#B2B3B2] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum.</p>
+              <a href="#" className='flex items-center gap-x-2 text-[#B2B3B2] hover:text-main'>Learn more... <ArrowRight className='' size={16} /></a>
+            </div>
+
+            <div className="relative top-0 border border-line rounded-sm p-5 flex flex-col items-center gap-3 cursor-pointer transition-all hover:-top-1">
+              <div className="size-20 bg-[#EAD4C5] rounded-sm flex items-center justify-center">
+                <img src="image/service-icon4.svg" width={50} alt="" />
+              </div>
+              <div className="text-xl font-bold">Legal services</div>
+              <p className='text-[#B2B3B2] text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum.</p>
+              <a href="#" className='flex items-center gap-x-2 text-[#B2B3B2] hover:text-main'>Learn more... <ArrowRight className='' size={16} /></a>
+            </div>
+
+          </div>
         </div>
       </section>
     </>
