@@ -11,7 +11,7 @@ import { Brackets, Droplet, House } from 'lucide-react';
 const RoomCard = ({ id, title, debrooms, bathrooms, size, images, price, avatar }) => {
 
     return (
-        <div className='rounded-2xl overflow-hidden shadow-md'>
+        <div className='rounded-2xl overflow-hidden shadow-md bg-white'>
             <Swiper
                 modules={[Pagination]}
                 slidesPerView={1}

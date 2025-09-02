@@ -3,13 +3,15 @@ import React, { useEffect, useState } from 'react'
 import Title from '../components/Title'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import sportList from '../db.json'
+import listRooms from '../db.json'
+import topList from '../db.json'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import RoomCard from '../components/RoomCard';
+import RoomCard from '../components/SpotCard';
+import TopCard from '../components/TopCard';
 
 const HomePage = () => {
 
@@ -120,19 +122,23 @@ const HomePage = () => {
               pagination={{ clickable: true }}
               className='swiper-all'
             >
-              {sportList.sport.map(item => (
-                <SwiperSlide className=''><RoomCard {...item} /></SwiperSlide>
+              {listRooms.sport.map(item => (
+                <SwiperSlide className=''>
+                  <RoomCard {...item} />
+                </SwiperSlide>
               ))}
             </Swiper>
           </div>
         </div>
       </section>
-      {/* Section Properties */}
-      <section className='bg-section-violet'>
+      <section className='mt-[-23%] bg-section-violet min-h-[500px] pt-[23%]'>
         <div className="container mx-auto px-3">
-            <div className="">
-              
-            </div>
+          <Title title={'Top Properties'} desc={'Check the listing you want to showcase as featured '} />
+          <div className="grid grid-cols-2 gap-5 mt-5">
+            {listRooms.top.map(item => (
+              <TopCard {...item} />
+            ))}
+          </div>
         </div>
       </section>
     </>
