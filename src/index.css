@@ -9,11 +9,6 @@
   --color-section-grey: ;
 }
 
-/* Dots main swiper */
-.swiper-all {
-  height: 450px;
-}
-
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-main);
 }

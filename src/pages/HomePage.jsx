@@ -1,4 +1,4 @@
-import { ArrowRight, MoveRight, Search } from 'lucide-react'
+import { ArrowRight, ChevronDown, ChevronUp, MoveRight, Search } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import Title from '../components/Title'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -48,8 +48,8 @@ const HomePage = () => {
               ))}
             </div>
             <div className="relative flex mt-5">
-              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-500 w-1/5 rounded-l-sm'>
-                {onBtn}
+              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-200 w-1/5 rounded-l-sm flex items-center justify-center gap-x-2'>
+                {onBtn}{showDrop ? <ChevronUp size={18} className='relative top-0.5' /> : <ChevronDown size={18} className='relative top-0.5' />}
               </button>
               <input type="text" className='pl-3 bg-white text-text outline-0 w-3/5' placeholder='Enter an adress, state, city, area or zip code' />
               <button className='bg-main text-white cursor-pointer flex gap-x-2 items-center justify-center w-1/5 rounded-r-sm'><Search />Search Listings</button>
@@ -120,7 +120,7 @@ const HomePage = () => {
               spaceBetween={20}
               slidesPerView={3}
               pagination={{ clickable: true }}
-              className='swiper-all'
+              className='min-h-[500px]'
             >
               {listRooms.sport.map(item => (
                 <SwiperSlide className=''>
@@ -131,6 +131,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      {/* Section Top */}
       <section className='mt-[-23%] bg-section-violet min-h-[500px] pt-[23%]'>
         <div className="container mx-auto px-3">
           <Title title={'Top Properties'} desc={'Check the listing you want to showcase as featured '} />
