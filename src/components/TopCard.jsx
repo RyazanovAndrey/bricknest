@@ -16,6 +16,7 @@ const TopCard = ({ id, title, debrooms, bathrooms, size, price, images, desc }) 
                     slidesPerView={1}
                     pagination={{ clickable: true }}
                     grabCursor={true}
+                    loop
                     className='w-full object-cover'
                 >
                     {images.map(item => (
@@ -24,7 +25,7 @@ const TopCard = ({ id, title, debrooms, bathrooms, size, price, images, desc }) 
                 </Swiper>
             </div>
             <div className="p-5">
-                <Link to={`/room/${id}`} className='font-bold text-2xl'>{title}</Link>
+                <Link to={`/top/room/${id}`} className='font-bold text-2xl'>{title}</Link>
                 <div className="font-bold">{price}</div>
                 <div className="text-[14px] text-gray-500 my-3">{desc}</div>
                 <div className="flex flex-col gap-2 my-3 cursor-pointer pb-3">

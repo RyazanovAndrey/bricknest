@@ -1,17 +1,18 @@
-import { ArrowRight, ChevronDown, ChevronUp, MoveRight, Search } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
-import Title from '../components/Title'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { ArrowRight, ChevronDown, ChevronUp, Search } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import Title from '../components/Title';
+import listRooms from '../db.json';
+import TopCard from '../components/TopCard';
+
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import listRooms from '../db.json'
-import topList from '../db.json'
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import RoomCard from '../components/SpotCard';
-import TopCard from '../components/TopCard';
+import { Link } from 'react-router';
+import SpotlightCard from '../components/SpotlightCard';
 
 const HomePage = () => {
 
@@ -120,11 +121,13 @@ const HomePage = () => {
               spaceBetween={20}
               slidesPerView={3}
               pagination={{ clickable: true }}
-              className='min-h-[500px]'
+              grabCursor={true}
+              loop
+              className='h-[500px]'
             >
-              {listRooms.sport.map(item => (
-                <SwiperSlide className=''>
-                  <RoomCard {...item} />
+              {listRooms.spot.map(item => (
+                <SwiperSlide>
+                  <SpotlightCard {...item} />
                 </SwiperSlide>
               ))}
             </Swiper>
