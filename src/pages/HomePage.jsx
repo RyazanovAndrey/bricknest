@@ -41,7 +41,7 @@ const HomePage = () => {
         <div className="absolute bg-black/60 w-full h-full min-h-[600px] z-20"></div>
         <div className="relative w-[1000px] text-center space-y-4 z-40">
           <h1 className='text-5xl font-bold text-white'>Find Your Dream <span className='text-main'>Home</span></h1>
-          <p className='text-white'>Explore top properties in Poland with trusted real estate services</p>
+          <p className='text-white'>Explore top properties in India with trusted real estate services</p>
           <div className="bg-black/60 rounded-md p-3 text-white">
             <div className="flex gap-x-10">
               {tabsHome.map(item => (
@@ -135,7 +135,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* Section Top */}
-      <section className='mt-[-23%] bg-section-violet min-h-[500px] pt-[23%]'>
+      <section className='mt-[-23%] bg-section-violet min-h-[500px] pt-[23%] pb-20'>
         <div className="container mx-auto px-3">
           <Title title={'Top Properties'} desc={'Check the listing you want to showcase as featured '} />
           <div className="grid grid-cols-2 gap-5 mt-5">
@@ -144,6 +144,49 @@ const HomePage = () => {
             ))}
           </div>
         </div>
+      </section>
+      {/* Feature Collections */}
+      <section className='py-20'>
+        <div className="container mx-auto px-3">
+          <Title title={'Featured Collections'} desc={'Display how many properties are by category, city or area'} />
+          <div className="grid grid-cols-4 gap-5 mt-5">
+            {listRooms.collections.map(item => (
+              <div className='flex gap-5 p-3 shadow-md rounded-lg'>
+                <div className="size-20 overflow-hidden rounded-md">
+                  <img src={item.image} className='w-full h-full' alt="" />
+                </div>
+                <div className="">
+                  <div className="font-bold">{item.title}</div>
+                  <div className="">Lorem ipsum dolor sit amet.</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Get in touch */}
+      <section className='bg-[url(image/page-section.jpg)] py-20 object-cover bg-center grid place-items-center'>
+            <div className="container mx-auto px-3">
+              <div className="grid grid-cols-2 rounded-2xl overflow-hidden">
+                <div className="bg-[#111823] text-white">
+                  <div className="my-20 mx-10 space-y-3">
+                    <div className="text-2xl font-bold">Work with the best real estate platform in Mumbai to buy or sell properties</div>
+                    <div className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus architecto labore perferendis laboriosam inventore, ipsam at aliquid ad ab.</div>
+                    <button className='bg-black py-3 px-6 rounded-md cursor-pointer'>Contact us today</button>
+                  </div>
+                </div>
+                <div className="bg-white grid place-items-center">
+                  <div className="mx-10 space-y-2">
+                    <div className="text-lg font-bold">Get in touch</div>
+                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
+                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
+                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
+                    <textarea className='border border-gray-200 w-full pl-3 outline-0' placeholder='Type your message...'></textarea>
+                    <button className='bg-main text-white w-full h-10 cursor-pointer'>Send mail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
       </section>
     </>
   )

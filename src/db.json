@@ -164,5 +164,39 @@
     ],
     "latest": [
         {}
+    ],
+    "collections" : [
+        {
+            "title" : "Mumbai",
+            "image" : "image/collection-img-1.webp"
+        },
+        {
+            "title" : "Benguru",
+            "image" : "image/collection-img-2.webp"
+        },
+        {
+            "title" : "Chennal",
+            "image" : "image/collection-img-3.webp"
+        },
+        {
+            "title" : "Delhi",
+            "image" : "image/collection-img-4.webp"
+        },
+        {
+            "title" : "Pune",
+            "image" : "image/collection-img-5.webp"
+        },
+        {
+            "title" : "Thane",
+            "image" : "image/collection-img-6.webp"
+        },
+        {
+            "title" : "Noida",
+            "image" : "image/collection-img-7.webp"
+        },
+        {
+            "title" : "Gurgaon",
+            "image" : "image/collection-img-8.webp"
+        }
     ]
 }
