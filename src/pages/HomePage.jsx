@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Link } from 'react-router';
 import SpotlightCard from '../components/SpotlightCard';
+import BtnCustom from '../components/BtnCustom';
 
 const HomePage = () => {
 
@@ -157,36 +158,52 @@ const HomePage = () => {
                 </div>
                 <div className="">
                   <div className="font-bold">{item.title}</div>
-                  <div className="">Lorem ipsum dolor sit amet.</div>
+                  <div className="text-gray-500">Lorem ipsum dolor sit amet.</div>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+      {/* Latest preperies */}
+      <section className=''>
+        <div className="container mx-auto px-3">
+          <div className="container mx-auto px-3">
+            <div className="flex justify-between items-center">
+              <Title title={'Latest Properties'} desc={'List your latest properties and order them as you with'} />
+              <BtnCustom variant='border'>View All Properties</BtnCustom>
+            </div>
+            <div className="grid grid-cols-3 gap-x-5 mt-5 mb-20">
+              {listRooms.latest.map(item => (
+                <SpotlightCard {...item} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Get in touch */}
       <section className='bg-[url(image/page-section.jpg)] py-20 object-cover bg-center grid place-items-center'>
-            <div className="container mx-auto px-3">
-              <div className="grid grid-cols-2 rounded-2xl overflow-hidden">
-                <div className="bg-[#111823] text-white">
-                  <div className="my-20 mx-10 space-y-3">
-                    <div className="text-2xl font-bold">Work with the best real estate platform in Mumbai to buy or sell properties</div>
-                    <div className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus architecto labore perferendis laboriosam inventore, ipsam at aliquid ad ab.</div>
-                    <button className='bg-black py-3 px-6 rounded-md cursor-pointer'>Contact us today</button>
-                  </div>
-                </div>
-                <div className="bg-white grid place-items-center">
-                  <div className="mx-10 space-y-2">
-                    <div className="text-lg font-bold">Get in touch</div>
-                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
-                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
-                    <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0' />
-                    <textarea className='border border-gray-200 w-full pl-3 outline-0' placeholder='Type your message...'></textarea>
-                    <button className='bg-main text-white w-full h-10 cursor-pointer'>Send mail</button>
-                  </div>
-                </div>
+        <div className="container mx-auto px-3">
+          <div className="grid grid-cols-2 rounded-2xl overflow-hidden">
+            <div className="bg-[#111823] text-white">
+              <div className="my-20 mx-10 space-y-3">
+                <div className="text-2xl font-bold">Work with the best real estate platform in Mumbai to buy or sell properties</div>
+                <div className="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus architecto labore perferendis laboriosam inventore, ipsam at aliquid ad ab.</div>
+                <button className='bg-black py-3 px-6 rounded-md cursor-pointer'>Contact us today</button>
               </div>
             </div>
+            <div className="bg-white grid place-items-center">
+              <div className="mx-10 space-y-2">
+                <div className="text-lg font-bold">Get in touch</div>
+                <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-10 outline-0 rounded-md' />
+                <input type="text" placeholder='Your email' className='w-full border border-gray-200 pl-3 h-10 outline-0 rounded-md' />
+                <input type="text" placeholder='Your phone' className='w-full border border-gray-200 pl-3 h-10 outline-0 rounded-md' />
+                <textarea className='border border-gray-200 w-full pl-3 outline-0 rounded-md' placeholder='Type your message...'></textarea>
+                <button className='bg-main text-white w-full h-10 cursor-pointer rounded-md'>Send mail</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )

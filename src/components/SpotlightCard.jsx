@@ -16,6 +16,7 @@ const SpotlightCard = ({ id, title, debrooms, bathrooms, size, images, price, av
                 modules={[Pagination]}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
+                grabCursor={true}
                 loop
             >
                 {images.map(item => (
@@ -24,7 +25,7 @@ const SpotlightCard = ({ id, title, debrooms, bathrooms, size, images, price, av
             </Swiper>
             <div className="p-5">
                 <Link to={`/spot/room/${id}`} className='font-bold'>{title}</Link>
-                <div className="flex items-center gap-x-2 my-3">
+                <div className="flex items-center gap-x-2 my-3 text-gray-500">
                     <div className="flex items-center gap-x-2">
                         <House size={16} />
                         <div className="">{debrooms} Beds</div>
