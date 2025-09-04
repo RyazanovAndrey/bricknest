@@ -96,7 +96,7 @@
             "size": "190 m2",
             "price": "$200.00",
             "tag": "Fetures",
-            "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
             "images": [
                 "image/rooms/top-property-1-1.jpg",
                 "image/rooms/top-property-1-2.jpg",
@@ -115,7 +115,7 @@
             "size": "190 m2",
             "price": "$200.00",
             "tag": "Fetures",
-            "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
             "images": [
                 "image/rooms/top-property-2-1.jpg",
                 "image/rooms/top-property-2-2.jpg",
@@ -133,7 +133,7 @@
             "size": "190 m2",
             "price": "$200.00",
             "tag": "Fetures",
-            "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
             "images": [
                 "image/rooms/top-property-3-1.jpg",
                 "image/rooms/top-property-3-2.jpg",
@@ -151,7 +151,7 @@
             "size": "190 m2",
             "price": "$200.00",
             "tag": "Fetures",
-            "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, earum!",
             "images": [
                 "image/rooms/top-property-4-1.jpg",
                 "image/rooms/top-property-4-2.jpg",
@@ -254,70 +254,90 @@
             "avatar": "image/rooms/property-owner-1.jpg"
         }
     ],
-    "collections" : [
+    "collections": [
         {
-            "title" : "Mumbai",
-            "image" : "image/collection-img-1.webp"
+            "title": "Mumbai",
+            "image": "image/collection-img-1.webp"
         },
         {
-            "title" : "Benguru",
-            "image" : "image/collection-img-2.webp"
+            "title": "Benguru",
+            "image": "image/collection-img-2.webp"
         },
         {
-            "title" : "Chennal",
-            "image" : "image/collection-img-3.webp"
+            "title": "Chennal",
+            "image": "image/collection-img-3.webp"
         },
         {
-            "title" : "Delhi",
-            "image" : "image/collection-img-4.webp"
+            "title": "Delhi",
+            "image": "image/collection-img-4.webp"
         },
         {
-            "title" : "Pune",
-            "image" : "image/collection-img-5.webp"
+            "title": "Pune",
+            "image": "image/collection-img-5.webp"
         },
         {
-            "title" : "Thane",
-            "image" : "image/collection-img-6.webp"
+            "title": "Thane",
+            "image": "image/collection-img-6.webp"
         },
         {
-            "title" : "Noida",
-            "image" : "image/collection-img-7.webp"
+            "title": "Noida",
+            "image": "image/collection-img-7.webp"
         },
         {
-            "title" : "Gurgaon",
-            "image" : "image/collection-img-8.webp"
+            "title": "Gurgaon",
+            "image": "image/collection-img-8.webp"
         }
     ],
-    "explore" : [
+    "explore": [
         {
-            "image" : "image/Explore-1.jpg",
-            "title" : "Apartments",
-            "desc" : "Ready to move-in apartments"
+            "image": "image/Explore-1.jpg",
+            "title": "Apartments",
+            "desc": "Ready to move-in apartments"
         },
         {
-            "image" : "image/Explore-2.jpg",
-            "title" : "Houses",
-            "desc" : "Freedom and privacy in your home"
+            "image": "image/Explore-2.jpg",
+            "title": "Houses",
+            "desc": "Freedom and privacy in your home"
         },
         {
-            "image" : "image/Explore-3.jpg",
-            "title" : "Townships",
-            "desc" : "Community living oppotunities"
+            "image": "image/Explore-3.jpg",
+            "title": "Townships",
+            "desc": "Community living oppotunities"
         },
         {
-            "image" : "image/Explore-4.jpg",
-            "title" : "Studio",
-            "desc" : "Comfortable homes for people on-the-go"
+            "image": "image/Explore-4.jpg",
+            "title": "Studio",
+            "desc": "Comfortable homes for people on-the-go"
         },
         {
-            "image" : "image/Explore-5.jpg",
-            "title" : "Luxury Homes",
-            "desc" : "Exceptional amenities and materials"
+            "image": "image/Explore-5.jpg",
+            "title": "Luxury Homes",
+            "desc": "Exceptional amenities and materials"
         },
         {
-            "image" : "image/Explore-6.jpg",
-            "title" : "Office Spaces",
-            "desc" : "Invest in commercial real estate"
+            "image": "image/Explore-6.jpg",
+            "title": "Office Spaces",
+            "desc": "Invest in commercial real estate"
+        }
+    ],
+    "blog": [
+        {
+            "image": "image/Blog-1.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
+        },
+         {
+            "image": "image/Blog-2.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
+        },
+         {
+            "image": "image/Blog-3.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
         }
     ]
 }

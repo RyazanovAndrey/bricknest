@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import SpotlightCard from '../components/SpotlightCard';
 import BtnCustom from '../components/BtnCustom';
+import BlogCard from '../components/BlogCard';
 
 const HomePage = () => {
 
@@ -28,6 +29,10 @@ const HomePage = () => {
   }
 
   const [onBtn, setOnBtn] = useState(tabsHomeList[tabHomeActive][0])
+
+  const showMore = () => {
+    console.log('+')
+  }
 
   useEffect(() => {
     setOnBtn(tabsHomeList[tabHomeActive][0])
@@ -151,7 +156,7 @@ const HomePage = () => {
           <Title title={'Featured Collections'} desc={'Display how many properties are by category, city or area'} />
           <div className="grid grid-cols-4 gap-5 mt-5">
             {listRooms.collections.map(item => (
-              <div className='flex gap-5 p-3 shadow-md rounded-lg'>
+              <div className='flex gap-5 p-3 border border-gray-200 cursor-pointer rounded-lg hover:shadow-lg duration-300 '>
                 <div className="size-20 overflow-hidden rounded-md">
                   <img src={item.image} className='w-full h-full' alt="" />
                 </div>
@@ -217,6 +222,20 @@ const HomePage = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* News */}
+      <section className=''>
+        <div className="container mx-auto px-3">
+          <Title title={'News & Article'} desc={'Read about what is happening in India real estate market'} />
+          <div className="grid grid-cols-3 gap-5 mt-5">
+            {listRooms.blog.map(item => (
+              <BlogCard {...item} />
+            ))}
+          </div>
+          <div className="text-center w-full py-8">
+              <BtnCustom clickBtn={showMore}>Load articles</BtnCustom>
           </div>
         </div>
       </section>

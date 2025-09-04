@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import { Outlet } from 'react-router'
+import Footer from './Footer'
 
 const Layout = () => {
     return (
@@ -9,9 +10,7 @@ const Layout = () => {
             <main>
                 <Outlet />
             </main>
-            <footer className="w-full bg-gray-500 mt-auto">
-                <div className="container mx-auto px-3 py-2">2025</div>
-            </footer>
+            <Footer />
         </div>
     )
 }

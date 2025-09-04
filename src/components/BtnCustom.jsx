@@ -1,9 +1,9 @@
 import React from 'react'
 
-const BtnCustom = ({ variant, children }) => {
+const BtnCustom = ({ variant, children, clickBtn }) => {
     return variant == 'border' ? (
-        <button  className='custom-btn-border'>{children}</button>
-    ) : <button className='custom-btn-fill'>{children}</button>
+        <button onClick={clickBtn} className='custom-btn-border'>{children}</button>
+    ) : <button onClick={clickBtn} className='custom-btn-fill'>{children}</button>
 }
 
 export default BtnCustom
