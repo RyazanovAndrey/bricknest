@@ -9,6 +9,10 @@
   --color-section-grey: ;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-main);
 }
