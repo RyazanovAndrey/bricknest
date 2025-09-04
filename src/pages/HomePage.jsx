@@ -11,7 +11,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { Link } from 'react-router';
 import SpotlightCard from '../components/SpotlightCard';
 import BtnCustom from '../components/BtnCustom';
 
@@ -168,16 +167,14 @@ const HomePage = () => {
       {/* Latest preperies */}
       <section className=''>
         <div className="container mx-auto px-3">
-          <div className="container mx-auto px-3">
-            <div className="flex justify-between items-center">
-              <Title title={'Latest Properties'} desc={'List your latest properties and order them as you with'} />
-              <BtnCustom variant='border'>View All Properties</BtnCustom>
-            </div>
-            <div className="grid grid-cols-3 gap-x-5 mt-5 mb-20">
-              {listRooms.latest.map(item => (
-                <SpotlightCard {...item} />
-              ))}
-            </div>
+          <div className="flex justify-between items-center">
+            <Title title={'Latest Properties'} desc={'List your latest properties and order them as you with'} />
+            <BtnCustom variant={'border'}>View All Properties</BtnCustom>
+          </div>
+          <div className="grid grid-cols-3 gap-5 mt-5 mb-20">
+            {listRooms.latest.map(item => (
+              <SpotlightCard {...item} />
+            ))}
           </div>
         </div>
       </section>
@@ -202,6 +199,15 @@ const HomePage = () => {
                 <button className='bg-main text-white w-full h-10 cursor-pointer rounded-md'>Send mail</button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Explore by type */}
+      <section className='py-20'>
+        <div className="container mx-auto px-3">
+          <Title title={'Explore by type'} desc={'Display how many properties are by city, area or category'} />
+          <div className="mt-5">
+            
           </div>
         </div>
       </section>

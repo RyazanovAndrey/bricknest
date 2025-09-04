@@ -1,7 +1,8 @@
 import { Phone, User } from 'lucide-react'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import Modal from './Modal'
+import BtnCustom from './BtnCustom'
 
 const Header = () => {
 
@@ -37,7 +38,7 @@ const Header = () => {
           <button onClick={() => setIsOpen(true)} className='cursor-pointer'>
             <User />
           </button>
-          <button className='bg-main py-2 px-4 rounded-sm cursor-pointer'>Add listing</button>
+          <BtnCustom>Add listing</BtnCustom>
         </div>
       </div>
       {isOpen && <Modal toggleModal={toggleModal} />}
