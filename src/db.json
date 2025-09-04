@@ -287,5 +287,37 @@
             "title" : "Gurgaon",
             "image" : "image/collection-img-8.webp"
         }
+    ],
+    "explore" : [
+        {
+            "image" : "image/Explore-1.jpg",
+            "title" : "Apartments",
+            "desc" : "Ready to move-in apartments"
+        },
+        {
+            "image" : "image/Explore-2.jpg",
+            "title" : "Houses",
+            "desc" : "Freedom and privacy in your home"
+        },
+        {
+            "image" : "image/Explore-3.jpg",
+            "title" : "Townships",
+            "desc" : "Community living oppotunities"
+        },
+        {
+            "image" : "image/Explore-4.jpg",
+            "title" : "Studio",
+            "desc" : "Comfortable homes for people on-the-go"
+        },
+        {
+            "image" : "image/Explore-5.jpg",
+            "title" : "Luxury Homes",
+            "desc" : "Exceptional amenities and materials"
+        },
+        {
+            "image" : "image/Explore-6.jpg",
+            "title" : "Office Spaces",
+            "desc" : "Invest in commercial real estate"
+        }
     ]
 }

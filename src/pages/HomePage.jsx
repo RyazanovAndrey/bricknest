@@ -206,8 +206,17 @@ const HomePage = () => {
       <section className='py-20'>
         <div className="container mx-auto px-3">
           <Title title={'Explore by type'} desc={'Display how many properties are by city, area or category'} />
-          <div className="mt-5">
-            
+          <div className="grid grid-cols-3 gap-5 mt-5">
+            {listRooms.explore.map(item => (
+              <div className='relative rounded-2xl overflow-hidden h-[300px] group cursor-pointer'>
+                <img src={item.image} alt="" />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/30 transition-all"></div>
+                <div className="absolute bottom-5 left-0 text-white w-full text-center">
+                  <div className="text-2xl">{item.title}</div>
+                  <div className="">{item.desc}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
