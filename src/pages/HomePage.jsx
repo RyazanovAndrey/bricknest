@@ -201,7 +201,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* Get in touch */}
-      <section className='bg-[url(image/page-section.jpg)] py-20 object-cover bg-center grid place-items-center'>
+      <section className='bg-[url(/image/page-section.jpg)] py-20 object-cover bg-center grid place-items-center'>
         <div className="container mx-auto px-3">
           <div className="grid md:grid-cols-2 rounded-2xl overflow-hidden">
             <div className="bg-[#111823] text-white">
