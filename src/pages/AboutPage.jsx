@@ -22,7 +22,7 @@ const AboutPage = () => {
       <section className="py-20">
         <div className="container mx-auto px-3">
           <Title title={'Meet Our Team'} desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsa placeat fugiat atque aliquam. Reiciendis exercitationem distinctio quibusdam. Fuga, blanditiis.'} />
-          <div className="grid grid-cols-3 gap-x-5 mt-5">
+          <div className="grid md:grid-cols-3 gap-5 mt-5">
             {aboutList.about.map(item => (
               <AboutCard {...item} />
             ))}
@@ -32,7 +32,7 @@ const AboutPage = () => {
       <section className=''>
         <div className="container mx-auto px-3">
           <Title title='Frequently Asked Questions' desc={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsa placeat fugiat atque aliquam. Reiciendis exercitationem distinctio quibusdam. Fuga, blanditiis.'} />
-          <div className="my-10 grid grid-cols-2 gap-5">
+          <div className="my-10 grid md:grid-cols-2 gap-5">
 
             {aboutList.accordion.map(item => (
               <AccordionItem {...item} />

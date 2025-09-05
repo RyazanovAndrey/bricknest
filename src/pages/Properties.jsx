@@ -24,7 +24,7 @@ const Properties = () => {
             <section className='my-20'>
                 <div className="container mx-auto px-3">
                     <Title title={'Propertiest'} desc={'List your latest propertiest and order them as you wish'} />
-                    <div className="grid grid-cols-3 gap-5 mt-5">
+                    <div className="grid md:grid-cols-3 gap-5 mt-5">
                         {listRooms.spot.slice(0, page * 3).map(item => (
                             <SpotlightCard {...item} />
                         ))}

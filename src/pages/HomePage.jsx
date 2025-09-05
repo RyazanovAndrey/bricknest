@@ -50,7 +50,7 @@ const HomePage = () => {
       {/* Section Home */}
       <section className='relative bg-[url(/image/Hero.jpg)] object-cover min-h-[600px] grid place-items-center'>
         <div className="absolute bg-black/60 w-full h-full min-h-[600px] z-20"></div>
-        <div className="relative w-[1000px] text-center space-y-4 z-40">
+        <div className="relative w-96 md:w-[1000px] text-center space-y-4 z-40">
           <h1 className='text-5xl font-bold text-white'>Find Your Dream <span className='text-main'>Home</span></h1>
           <p className='text-white'>Explore top properties in India with trusted real estate services</p>
           <div className="bg-black/60 rounded-md p-3 text-white">
@@ -60,11 +60,11 @@ const HomePage = () => {
               ))}
             </div>
             <div className="relative flex mt-5">
-              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-200 w-1/5 rounded-l-sm flex items-center justify-center gap-x-2'>
+              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-200 w-1/5 rounded-l-sm flex items-center justify-center gap-x-2 h-11'>
                 {onBtn}{showDrop ? <ChevronUp size={18} className='relative top-0.5' /> : <ChevronDown size={18} className='relative top-0.5' />}
               </button>
-              <input type="text" className='pl-3 bg-white text-text outline-0 w-3/5' placeholder='Enter an adress, state, city, area or zip code' />
-              <button className='bg-main text-white cursor-pointer flex gap-x-2 items-center justify-center w-1/5 rounded-r-sm'><Search />Search Listings</button>
+              <input type="text" className='pl-3 bg-white text-text outline-0 h-11 w-3/5' placeholder='Enter an adress, state, city, area or zip code' />
+              <button className='bg-main text-white cursor-pointer flex gap-x-2 items-center justify-center w-1/5 rounded-r-sm h-11'><Search />Search Listings</button>
               {showDrop && (
                 <>
                   <div className="absolute top-[105%] bg-white w-60 text-text text-left rounded-sm overflow-hidden">
@@ -82,7 +82,7 @@ const HomePage = () => {
       <section>
         <div className="container mx-auto px-3 py-20">
           <Title title={'Our Services'} desc={'Bricknest offers you the best real estate website'} />
-          <div className="grid grid-cols-4 gap-x-5 mt-5">
+          <div className="grid md:grid-cols-4 gap-5 mt-5">
 
             <div className="relative top-0 border border-line rounded-sm p-5 flex flex-col items-center gap-3 cursor-pointer transition-all hover:-top-1">
               <div className="size-20 bg-[#D6E3ED] rounded-sm flex items-center justify-center">
@@ -130,11 +130,22 @@ const HomePage = () => {
             <Swiper
               modules={[Pagination]}
               spaceBetween={20}
-              slidesPerView={3}
+              slidesPerView={1}
               pagination={{ clickable: true }}
               grabCursor={true}
               loop
               className='h-[500px]'
+              breakpoints={{ 
+                768: {
+                  slidesPerView: 2
+                },
+                992: {
+                  slidesPerView: 2
+                },
+                1024: {
+                  slidesPerView: 3
+                }
+               }}
             >
               {listRooms.spot.map(item => (
                 <SwiperSlide>
@@ -149,7 +160,7 @@ const HomePage = () => {
       <section className='mt-[-23%] bg-section-violet min-h-[500px] pt-[23%] pb-20'>
         <div className="container mx-auto px-3">
           <Title title={'Top Properties'} desc={'Check the listing you want to showcase as featured '} />
-          <div className="grid grid-cols-2 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 gap-5 mt-5">
             {listRooms.top.map(item => (
               <TopCard {...item} />
             ))}
@@ -160,7 +171,7 @@ const HomePage = () => {
       <section className='py-20'>
         <div className="container mx-auto px-3">
           <Title title={'Featured Collections'} desc={'Display how many properties are by category, city or area'} />
-          <div className="grid grid-cols-4 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
             {listRooms.collections.map(item => (
               <div className='flex gap-5 p-3 border border-gray-200 cursor-pointer rounded-lg hover:shadow-lg duration-300 '>
                 <div className="size-20 overflow-hidden rounded-md">
@@ -182,7 +193,7 @@ const HomePage = () => {
             <Title title={'Latest Properties'} desc={'List your latest properties and order them as you with'} />
             <BtnCustom clickBtn={showMore} variant={'border'}>View All Properties</BtnCustom>
           </div>
-          <div className="grid grid-cols-3 gap-5 mt-5 mb-20">
+          <div className="grid md:grid-cols-3 gap-5 mt-5 mb-20">
             {listRooms.latest.slice(0, pageLatest * 3).map(item => (
               <SpotlightCard {...item} />
             ))}
@@ -192,7 +203,7 @@ const HomePage = () => {
       {/* Get in touch */}
       <section className='bg-[url(image/page-section.jpg)] py-20 object-cover bg-center grid place-items-center'>
         <div className="container mx-auto px-3">
-          <div className="grid grid-cols-2 rounded-2xl overflow-hidden">
+          <div className="grid md:grid-cols-2 rounded-2xl overflow-hidden">
             <div className="bg-[#111823] text-white">
               <div className="my-20 mx-10 space-y-3">
                 <div className="text-2xl font-bold">Work with the best real estate platform in Mumbai to buy or sell properties</div>
@@ -201,7 +212,7 @@ const HomePage = () => {
               </div>
             </div>
             <div className="bg-white grid place-items-center">
-              <div className="mx-10 space-y-2">
+              <div className="my-10 md:my-0 mx-10 space-y-2">
                 <div className="text-lg font-bold">Get in touch</div>
                 <input type="text" placeholder='Your name' className='w-full border border-gray-200 pl-3 h-11 outline-0 rounded-md' />
                 <input type="text" placeholder='Your email' className='w-full border border-gray-200 pl-3 h-11 outline-0 rounded-md' />
@@ -217,7 +228,7 @@ const HomePage = () => {
       <section className='py-20'>
         <div className="container mx-auto px-3">
           <Title title={'Explore by type'} desc={'Display how many properties are by city, area or category'} />
-          <div className="grid grid-cols-3 gap-5 mt-5">
+          <div className="grid md:grid-cols-3 gap-5 mt-5">
             {listRooms.explore.map(item => (
               <div className='relative rounded-2xl overflow-hidden h-[300px] group cursor-pointer'>
                 <img src={item.image} alt="" />
@@ -235,7 +246,7 @@ const HomePage = () => {
       <section className=''>
         <div className="container mx-auto px-3">
           <Title title={'News & Article'} desc={'Read about what is happening in India real estate market'} />
-          <div className="grid grid-cols-3 gap-5 mt-5">
+          <div className="grid md:grid-cols-3 gap-5 mt-5">
             {listRooms.blog.slice(0, pageBlog * 3).map(item => (
               <BlogCard {...item} />
             ))}

@@ -9,7 +9,7 @@ import { AtSign, Brackets, Droplet, Heart, House, Instagram, Share, Share2 } fro
 const TopCard = ({ id, title, debrooms, bathrooms, size, price, images, desc }) => {
 
     return (
-        <div className='flex bg-white rounded-2xl overflow-hidden'>
+        <div className='flex flex-col md:flex-row bg-white rounded-2xl overflow-hidden'>
             <div className="w-[300px] h-[300px]">
                 <Swiper
                     modules={[Pagination]}
