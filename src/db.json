@@ -548,6 +548,24 @@
             "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
             "date": "September 1, 2025",
             "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
+        },
+        {
+            "image": "image/Blog-1.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
+        },
+         {
+            "image": "image/Blog-2.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
+        },
+         {
+            "image": "image/Blog-3.jpg",
+            "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!",
+            "date": "September 1, 2025",
+            "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tempore soluta doloremque, amet veritatis dolorem beatae ad iste nam vel enim, labore odit neque debitis sapiente ratione. Dignissimos, iure."
         }
     ],
     "about" : [
@@ -568,6 +586,28 @@
             "name" : "Bhavyg Gatg",
             "job" : "middle managment",
             "about" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed quis laborum ipsam laboriosam reiciendis recusandae est ad officia perferendis!"
+        }
+    ],
+    "accordion" : [
+        {
+            "id" : 1,
+            "title" : "Why is it considered necessary to register Agreement for Sale?",
+            "desc" : "Desc 1"
+        },
+        {
+            "id" : 2,
+            "title" : "What is Carpet Area?",
+            "desc" : "Desc 1"
+        },
+        {
+            "id" : 3,
+            "title" : "Why can I qualify for exemptions on Tax?",
+            "desc" : "Desc 1"
+        },
+        {
+            "id" : 4,
+            "title" : "What are the documents a buyer would need from me?",
+            "desc" : "Desc 1"
         }
     ]
 }

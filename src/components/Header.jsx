@@ -35,7 +35,7 @@ const Header = () => {
             <Phone />
             800-500-44-44
           </div>
-          <button onClick={() => setIsOpen(true)} className='cursor-pointer'>
+          <button onClick={() => setIsOpen(true)} className='cursor-pointer hover:text-main transition-all'>
             <User />
           </button>
           <BtnCustom>Add listing</BtnCustom>

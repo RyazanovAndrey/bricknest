@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { AtSign, Brackets, Droplet, Heart, House, Share, Share2 } from 'lucide-react';
+import { AtSign, Brackets, Droplet, Heart, House, Instagram, Share, Share2 } from 'lucide-react';
 
 const TopCard = ({ id, title, debrooms, bathrooms, size, price, images, desc }) => {
 
@@ -39,7 +39,7 @@ const TopCard = ({ id, title, debrooms, bathrooms, size, price, images, desc }) 
                                 <AtSign color='grey' />
                             </div>
                             <div className="size-10 border p-2 border-gray-300 rounded-md hover:border-main transition-all duration-30 bg-white">
-                                <AtSign color='grey' />
+                                <Instagram color='grey' />
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage'
 import SingleRoom from './pages/SingleRoom'
 import Properties from './pages/Properties'
 import ErrorPage from './pages/ErrorPage'
+import BlogPage from './pages/BlogPage'
 
 const App = () => {
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='properties' element={<Properties />} />
+          <Route path='blog' element={<BlogPage />} />
           <Route path='*' element={<ErrorPage />} />
           <Route path=':cat/room/:id' element={<SingleRoom />} />
         </Route>
