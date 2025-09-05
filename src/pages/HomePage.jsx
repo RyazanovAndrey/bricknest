@@ -59,12 +59,12 @@ const HomePage = () => {
                 <button onClick={() => setTabHomeeActive(item)} className={`cursor-pointer relative ${tabHomeActive == item ? 'after:absolute after:w-full after:h-0.5 after:-bottom-1 after:left-0 after:bg-white' : ''}`}>{item}</button>
               ))}
             </div>
-            <div className="relative flex mt-5">
-              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-200 w-1/5 rounded-l-sm flex items-center justify-center gap-x-2 h-11'>
+            <div className="relative grid md:grid-cols-3 mt-5">
+              <button onClick={() => setShowDrop(!showDrop)} className='py-3 text-text cursor-pointer bg-gray-200  rounded-l-sm flex items-center justify-center gap-x-2 h-11'>
                 {onBtn}{showDrop ? <ChevronUp size={18} className='relative top-0.5' /> : <ChevronDown size={18} className='relative top-0.5' />}
               </button>
-              <input type="text" className='pl-3 bg-white text-text outline-0 h-11 w-3/5' placeholder='Enter an adress, state, city, area or zip code' />
-              <button className='bg-main text-white cursor-pointer flex gap-x-2 items-center justify-center w-1/5 rounded-r-sm h-11'><Search />Search Listings</button>
+              <input type="text" className='pl-3 bg-white text-text outline-0 h-11' placeholder='Enter an adress, state, city, area or zip code' />
+              <button className='bg-main text-white cursor-pointer flex gap-x-2 items-center justify-center rounded-r-sm h-11'><Search />Search Listings</button>
               {showDrop && (
                 <>
                   <div className="absolute top-[105%] bg-white w-60 text-text text-left rounded-sm overflow-hidden">
