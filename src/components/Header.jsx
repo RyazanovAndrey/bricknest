@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router'
 import Modal from './Modal'
 import BtnCustom from './BtnCustom'
 import { MobileMenu } from './MobileMenu'
+import { linkHome } from '../linkHome.js'  
 
 const Header = () => {
 
@@ -20,10 +21,10 @@ const Header = () => {
   }
 
   const navLinks = [
-    { href: '/', title: 'Home' },
-    { href: '/about', title: 'About' },
-    { href: '/properties', title: 'Properties' },
-    { href: '/blog', title: 'Blog' }
+    { href: linkHome, title: 'Home' },
+    { href: linkHome + 'about', title: 'About' },
+    { href: linkHome + 'properties', title: 'Properties' },
+    { href: linkHome + 'blog', title: 'Blog' }
   ]
 
   return (

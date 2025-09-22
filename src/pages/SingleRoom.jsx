@@ -1,8 +1,7 @@
-import React from 'react'
-import { Link, useParams } from 'react-router'
-import roomsList from '../db.json'
+import { useParams } from 'react-router';
+import roomsList from '../db.json';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -39,7 +38,7 @@ const SingleRoom = () => {
                                 pagination={{ clickable: true }}
                             >
                                 {imageItem.map(item => (
-                                    <SwiperSlide><img src={`/${item}`} className='w-full h-[350px] object-cover' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={`${item}`} className='w-full h-[350px] object-cover' alt="" /></SwiperSlide>
                                 ))}
                             </Swiper>
                         </div>

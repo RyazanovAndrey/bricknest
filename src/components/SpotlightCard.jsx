@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { linkHome } from '../linkHome.js';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,7 +25,7 @@ const SpotlightCard = ({ id, title, debrooms, bathrooms, size, images, price, av
                 ))}
             </Swiper>
             <div className="p-5">
-                <Link to={`/spot/room/${id}`} className='font-bold'>{title}</Link>
+                <Link to={`${linkHome}spot/room/${id}`} className='font-bold'>{title}</Link>
                 <div className="flex items-center gap-x-2 my-3 text-gray-500">
                     <div className="flex items-center gap-x-2">
                         <House size={16} />

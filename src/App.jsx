@@ -7,16 +7,17 @@ import SingleRoom from './pages/SingleRoom'
 import Properties from './pages/Properties'
 import ErrorPage from './pages/ErrorPage'
 import BlogPage from './pages/BlogPage'
+import { linkHome } from './linkHome.js'
 
 const App = () => {
 
   const location = useLocation().pathname
 
   const titleList = {
-    "/" : "Bricknest",
-    "/about" : "Bricknest - About page",
-    "/properties" : "Bricknest - Properties page",
-    "/blog" : "Bricknest - Blog page",
+    "/bricknest/" : "Bricknest",
+    "/bricknest/about" : "Bricknest - About page",
+    "/bricknest/properties" : "Bricknest - Properties page",
+    "/bricknest/blog" : "Bricknest - Blog page",
   }
 
   useEffect(() => {
@@ -27,13 +28,13 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path='/bricknest/' element={<Layout />} >
+        <Route path={linkHome} element={<Layout />} >
           <Route index element={<HomePage />} />
-          <Route path='about' element={<AboutPage />} />
-          <Route path='properties' element={<Properties />} />
-          <Route path='blog' element={<BlogPage />} />
-          <Route path='*' element={<ErrorPage />} />
-          <Route path='/bricknest/:cat/room/:id' element={<SingleRoom />} />
+          <Route path={linkHome + 'about'} element={<AboutPage />} />
+          <Route path={linkHome + 'properties'} element={<Properties />} />
+          <Route path={linkHome + 'blog'} element={<BlogPage />} />
+          <Route path={linkHome + '*'} element={<ErrorPage />} />
+          <Route path={linkHome + ':cat/room/:id'} element={<SingleRoom />} />
         </Route>
       </Routes>
     </>
