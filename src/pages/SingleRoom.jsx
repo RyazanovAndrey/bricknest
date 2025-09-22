@@ -38,7 +38,7 @@ const SingleRoom = () => {
                                 pagination={{ clickable: true }}
                             >
                                 {imageItem.map(item => (
-                                    <SwiperSlide><img src={'../../'+item} className='w-full h-[350px] object-cover' alt="" /></SwiperSlide>
+                                    <SwiperSlide><img src={'../../' + item} className='w-full h-[350px] object-cover' alt="" /></SwiperSlide>
                                 ))}
                             </Swiper>
                         </div>
