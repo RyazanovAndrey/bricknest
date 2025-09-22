@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main: #6407d2;
+  --color-header: #030303;
+  --color-text: #16191e;
+  --color-line: #eaeaea;
+  --color-section-violet: #ECE3FC;
+  --color-section-grey: ;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-main);
+}
+
+/* Dots single swiper */
+.swiper-single-dots .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 55%;
+}
+
+.custom-btn-border {
+  position: relative;
+  border: 1px solid var(--color-main);
+  padding: 10px 24px;
+  border-radius: 5px;
+  color: var(--color-main);
+  cursor: pointer;
+  z-index: 99;
+}
+
+.custom-btn-border:hover {
+  color: white;
+}
+
+.custom-btn-border::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--color-main);
+  transition: .2s;
+  z-index: -1;
+}
+
+.custom-btn-border:hover::before {
+  width: 100%;
+}
+
+.custom-btn-fill {
+  position: relative;
+  border-radius: 5px;
+  padding: 10px 24px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid var(--color-main);
+  z-index: 99;
+}
+
+.custom-btn-fill:hover {
+  color: var(--color-main);
+}
+
+.custom-btn-fill::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  transition: .2s;
+  z-index: -1;
+}
+
+.custom-btn-fill:hover::before {
+  left: 100%;
+}
